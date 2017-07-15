@@ -1,3 +1,3 @@
-# Test task Math Parsser 
+# Test task Math Parser
 
 
