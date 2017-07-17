@@ -1,28 +1,14 @@
-# SimpleCalc
+# Test task Math Parser
+## Написать Angular2 приложение, состоящее из 1 формы и блока для вывода результатов выполнения:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+* Форма должна состоять из 3-х числовых инпутов, кнопки добавления большего количества инпутов, текстового поля для ввода формулы и кнопки посчитать.
 
-## Development server
+* Пользователь должен иметь возможность добавить любое количество инпутов (a1,a2,a3...).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* В поле формула может быть указан любой знак математической операции (+-*/) и ^ для возведения в степень и названия переменных a1,a2,a3.. соответствующие значениям инпутов заполненных пользователем (Пример формулы 3*a1+a2-a4*a5^a3)
 
-## Code scaffolding
+* По нажатию кнопки посчитать должно выводиться итоговое значение в блок для вывода результатов выполнения.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+>Валидация ввода не требуется. 
+>Код должен быть написан с расчетом на возможное расширение функционала, например добавления операций.
+>Если с возведением в степень будут проблемы, можно без нее (но лучше с ней).
