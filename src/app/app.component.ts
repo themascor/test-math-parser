@@ -61,9 +61,9 @@ export class AppComponent {
     // console.log(this.argument);
     }
   doCalc(f: string) {
-   this.result = ''; 
+   this.result = '';
    this.parser.pars(f, this.argument)
-   .then((rez) =>  this.result = rez  + '')
+   .then((rez) =>  this.result = (Math.round( (rez as number) * 10000) / 10000)   + '')
    .catch((err) => console.log((err as string)));
   }
   setValue($event) {
