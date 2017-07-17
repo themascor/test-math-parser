@@ -18,8 +18,8 @@
 
     <div class="form-group row">
       <div class=" offset-2  col-8">
-        <input name ="formul"  required autocomplete="off" class="form-control" type="text"   placeholder="Pass expression there..." (input)="formula = $event.target.value" >
-      </div>
+        <textarea name ="formul"  required autocomplete="off" class="form-control" type="text"   placeholder="Pass expression there..." (input)="formula = $event.target.value" ></textarea>
+        </div>
     </div>
     <button [disabled]="!(formula.length > 0)" class="offset-7  col-2 btn btn-primary" (click)="doCalc(formula)">Calc</button>
     <button class="col-1 btn  btn-link " (click)="addArg()">add arg...</button>
